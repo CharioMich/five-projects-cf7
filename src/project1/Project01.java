@@ -25,6 +25,6 @@ public class Project01 {
             e.printStackTrace();
             System.out.println("Error 12345");
         }
-
+        System.out.println("New entry for git check");
     }
 }
