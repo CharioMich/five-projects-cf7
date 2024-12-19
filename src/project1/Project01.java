@@ -8,9 +8,11 @@ public class Project01 {
 
     public static void main(String[] args) {
 
+        final int len = 6;
         String line;
+        int[] sixTable = {len};
         ArrayList<Integer> numbers = new ArrayList<Integer>();
-        String inFile = "C:/Users/babio/useFolder/numbers.txt";
+        String inFile = "C:/Users/babio/numbers.txt";
 
         try (BufferedReader br = new BufferedReader(new FileReader(inFile))) {
             while ((line = br.readLine()) != null) {
@@ -20,11 +22,17 @@ public class Project01 {
                     numbers.add(number);
                 }
             }
-            System.out.println(numbers);
+            //System.out.println(numbers);
         } catch (IOException e) {
             e.printStackTrace();
             System.out.println("Error 12345");
         }
-        System.out.println("New entry for git check");
+
+        int l = numbers.size();
+
+        for (int i = 0; i < l - len; i++) {
+            for (int j = )
+        }
+
     }
 }
