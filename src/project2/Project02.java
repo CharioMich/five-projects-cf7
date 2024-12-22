@@ -15,34 +15,30 @@ public class Project02 {
         subArr.add(table[0]);
 
         for (int i = 1; i < table.length; i++) {
-            subArr.add(table[i]);
             localMax = Math.max(localMax + table[i], table[i]);
             localMaxesTable[i] = localMax;
 
-            if (localMax > getSum(subArr)) {
-                subArr.clear();
-                subArr.add(table[i]);
+            if (localMax == table[i]) {
                 startIndex = i;
             }
         }
-
+        //System.out.println(Arrays.toString(localMaxesTable));
         int maxIndex = getMaxIndex(localMaxesTable);
 
         // Populate the output maximum sub array using the indexes
         for (int i = startIndex; i <= maxIndex; i++) {
             outSubArr.add(table[i]);
         }
-        System.out.println(subArr);
         System.out.println(outSubArr);
     }
 
 
-    public static int getSum (ArrayList<Integer> table) {
-        int sum = 0;
-        for(int d : table)
-            sum += d;
-        return sum;
-    }
+//    public static int getSum (ArrayList<Integer> table) {
+//        int sum = 0;
+//        for(int d : table)
+//            sum += d;
+//        return sum;
+//    }
 
     public static int getMaxIndex (int[] table) {
         int max = table[0];
