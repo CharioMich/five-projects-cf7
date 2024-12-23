@@ -10,9 +10,7 @@ public class Project02 {
         int[] localMaxesTable = new int[table.length];
         int localMax = table[0];
         int startIndex = 0;
-        ArrayList<Integer> subArr = new ArrayList<Integer>();
         ArrayList<Integer> outSubArr = new ArrayList<Integer>();
-        subArr.add(table[0]);
 
         for (int i = 1; i < table.length; i++) {
             localMax = Math.max(localMax + table[i], table[i]);
@@ -32,13 +30,6 @@ public class Project02 {
         System.out.println(outSubArr);
     }
 
-
-//    public static int getSum (ArrayList<Integer> table) {
-//        int sum = 0;
-//        for(int d : table)
-//            sum += d;
-//        return sum;
-//    }
 
     public static int getMaxIndex (int[] table) {
         int max = table[0];
