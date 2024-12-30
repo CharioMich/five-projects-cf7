@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * Project 4 solution attempt for CF7 (Five-Projects PDF Chapter.10 "Structured Programming")
+ * Tic-tac-toe game for two players.
  */
 public class Project04 {
 
@@ -29,7 +30,7 @@ public class Project04 {
                 "Each move is made in the following form: 'rowPosition , columnPosition'\n" +
                 "For example '2,2' refers to the central box and '1,1' to the top left corner. " +
                 "Player A has the 'X' symbol by default and Player B the 'O'.");
-
+        twoDPrinter(gameSet);
         // Main loop of the game
         while (gameIsOn) {
             // Get the x and y coordinates from the user
@@ -41,7 +42,7 @@ public class Project04 {
                     x = Integer.parseInt(move[0]);
                     y = Integer.parseInt(move[1]);
                     if (isNotValid(x) || isNotValid(y) || !gameSet[x-1][y-1].equals(" ")) {
-                        System.out.println("Please chose an empty position within the table's range.");
+                        System.out.println("Please choose an empty position within the table's range.");
                     } else {
                         setCoords = false;
                     }

@@ -4,6 +4,8 @@ import java.io.*;
 
 /**
  * Project 3 solution attempt for CF7 (Five-Projects PDF Chapter.10 "Structured Programming")
+ * Reads characters from a txt file and stores them into a 128x2 array.
+ * Then prints each character and the amount of times it appears in the text file, ordered by character.
  */
 public class Project03 {
 
@@ -30,7 +32,6 @@ public class Project03 {
         }
 
         printStats(arr);
-
     }
 
     public static void printStats (int[][] arr) {
