@@ -3,7 +3,7 @@ package project2;
 import java.util.*;
 /**
  * Project 2 solution attempt for CF7 (Five-Projects PDF Chapter.10 "Structured Programming")
- * View attached png file for explanation.
+ * View attached png file for a more detailed explanation.
  */
 public class Project02 {
 
