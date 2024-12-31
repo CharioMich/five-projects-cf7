@@ -20,12 +20,10 @@ public class Project03 {
                 // Filter spaces
                 if (i == 32 || i == 13 || i == 10 || i == 9) {
                     continue;
-                }
-                else if (arr[i][0] == 0) {
+                } else if (arr[i][0] == 0) {
                     arr[i][0] = i;
                     arr[i][1]++;
-                }
-                else arr[i][1]++;
+                } else arr[i][1]++;
             }
         } catch (IOException e) {
             e.printStackTrace();
